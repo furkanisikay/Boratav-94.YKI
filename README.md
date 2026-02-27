@@ -1,7 +1,7 @@
 # Boratav-94 YKI Kontrol Uygulaması
 
 ![.NET Framework](https://img.shields.io/badge/.NET_Framework-4.5-512BD4?logo=.net&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-9.0-239120?logo=c-sharp&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-5.0-239120?logo=c-sharp&logoColor=white)
 ![Windows Forms](https://img.shields.io/badge/Windows_Forms-Desktop_App-0078D6?logo=windows&logoColor=white)
 ![Lisans](https://img.shields.io/badge/Lisans-MIT-green)
 
@@ -60,6 +60,8 @@ Visual Studio ile çalıştırmak için:
 - Windows 10/11
 - Visual Studio 2019+ (Windows Desktop Development bileşeni)
 - .NET Framework 4.5 Targeting Pack
+
+> Kritik Not: .NET Framework 4.5 desteği sona ermiştir ve güvenlik güncellemesi almamaktadır; üretim kullanımı için .NET Framework 4.8'e yükseltme yapılması gereklidir.
 
 Gizli bilgiler için önerilen ortam değişkeni tanımlama (PowerShell):
 

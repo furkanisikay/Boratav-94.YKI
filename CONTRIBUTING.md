@@ -13,7 +13,7 @@ Bu projeye katkı sağlamak istediğiniz için teşekkürler.
 
 - Mevcut proje yapısını ve adlandırma düzenini koruyun.
 - Değişken, sınıf ve fonksiyon adlarını İngilizce kullanın.
-- Kod içi açıklama eklemeniz gerekiyorsa Türkçe yazın.
+- Kod içi açıklama eklemeniz gerekiyorsa Türkçe yazın (proje, Türkiye yazılım ekosistemine Türkçe teknik kaynak üretmeyi hedefler).
 - Güvenlik açısından gizli bilgileri koda gömmeyin; ortam değişkeni kullanın.
 
 ## Doğrulama
