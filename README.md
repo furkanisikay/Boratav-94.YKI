@@ -17,28 +17,6 @@ Boratav-94 YKI, operatörün tek bir masaüstü arayüzü üzerinden yön, kamer
 - Resource tabanlı görsel yönetimi (`.resx` + `Resources/`)
 - MIT lisansı ile açık kaynak kullanıma uygun yapı
 
-## Güvenlik Denetimi Özeti
-
-- Kod tabanı hardcoded şifre, API anahtarı, token ve yerel kullanıcı yolu desenleri için tarandı.
-- Bu sürümde doğrudan gömülü gizli bilgiye rastlanmadı.
-- İleride gizli bilgi eklenmesi gerekirse `App.config` içine yazmak yerine ortam değişkenleri kullanılmalıdır.
-
-Örnek (C#):
-
-```csharp
-var apiKey = Environment.GetEnvironmentVariable("BORATAV_API_KEY");
-if (string.IsNullOrWhiteSpace(apiKey))
-{
-    throw new InvalidOperationException("BORATAV_API_KEY ortam değişkeni tanımlı değil.");
-}
-```
-
-## Refactoring Öncelikleri (İlk 3 Adım)
-
-1. `ControlForm` içindeki olay yönetimini ayrı servis sınıflarına bölerek UI ve iş mantığını ayrıştırın.
-2. `Bilesenler/360DrcKontBtn` altında yön/kamera kontrol davranışlarını ortak bir arayüzle standardize ederek modülerliği artırın.
-3. Uygulama davranışını doğrulamak için en azından temel presenter/service katmanında birim test altyapısı ekleyin.
-
 ## Hızlı Başlangıç
 
 > Bu proje Windows ve .NET Framework hedefler. Linux/macOS üzerinde doğrudan derleme desteklenmez.
@@ -62,12 +40,6 @@ Visual Studio ile çalıştırmak için:
 - .NET Framework 4.5 Targeting Pack
 
 > Kritik Not: .NET Framework 4.5 desteği sona ermiştir ve güvenlik güncellemesi almamaktadır; üretim kullanımı için .NET Framework 4.8'e yükseltme yapılması gereklidir.
-
-Gizli bilgiler için önerilen ortam değişkeni tanımlama (PowerShell):
-
-```powershell
-setx BORATAV_API_KEY "ornek-deger"
-```
 
 ## Katkı
 
